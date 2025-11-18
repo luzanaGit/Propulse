@@ -281,7 +281,7 @@ footer {
   transform: translateY(-5px);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .bio {
     grid-template-columns: 200px 1fr;
     text-align: left;
@@ -293,6 +293,12 @@ footer {
 
   main {
     grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (max-width: 1250px) {
+  main {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -350,8 +356,13 @@ footer {
     background: rgba(24, 119, 242, 0.15);
   }
 
-  main {
-    grid-template-columns: 1fr;
+  .main section,
+  aside {
+    background: #faf9f6;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    width: calc(100vw - 52px);
   }
 }
 
