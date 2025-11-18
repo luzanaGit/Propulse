@@ -12,8 +12,24 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector("nav");
+
+    menuToggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+
+    document.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("active");
+      });
+    });
+  </script>
+
   <body>
     <header>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
       <div><a href="#" class="logo">Jasper's Profile Page</a></div>
       <nav>
         <a href="#bio">Bio</a>
