@@ -16,19 +16,15 @@
     document.addEventListener("DOMContentLoaded", () => {
       const menuToggle = document.querySelector(".menu-toggle");
       const nav = document.querySelector("nav");
-
       if (!menuToggle || !nav) {
         console.warn("menuToggle or nav not found:", { menuToggle, nav });
         return;
       }
-
       menuToggle.setAttribute("aria-expanded", "false");
-
       menuToggle.addEventListener("click", () => {
         const isActive = nav.classList.toggle("active");
         menuToggle.setAttribute("aria-expanded", isActive ? "true" : "false");
       });
-
       document.querySelectorAll("nav a").forEach((link) => {
         link.addEventListener("click", () => {
           nav.classList.remove("active");
