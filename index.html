@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasper's Profile Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div><a href="#" class="logo">Jasper's Profile Page</a></div>
+      <nav>
+        <a href="#bio">Bio</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact-me">Contact Me</a>
+        <a href="#location">Location</a>
+        <a href="#video">Video</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="bio">
+        <h2 id="bio">Bio</h2>
+        <br />
+        <div class="main-image">
+          <img src="assets/main.jpg" alt="Picture of me" height="300" />
+        </div>
+        <div>
+          <h1 class="typing-text">
+            I'm a
+            <span></span>
+          </h1>
+          <p>
+            My name is
+            <b>Jasper Cerwyn Luzana</b>.
+          </p>
+          <p>
+            I am pursuing a degree in
+            <b>Bachelor of Science in Information Technology</b>.
+          </p>
+          <p>
+            I am currently studying at the
+            <b>Philippine College of Arts and Trades</b>.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="hobbies">Hobbies</h2>
+        <ul>
+          <li>🎨 Drawing</li>
+          <li>📚 Reading Books</li>
+          <li>🎮 Gaming</li>
+          <li>🎵 Listening Music</li>
+          <li>✈️ Traveling</li>
+          <li>🏃 Running</li>
+          <li>🎬 Watching Movies</li>
+          <li>📸 Photography</li>
+          <li>🍳 Cooking</li>
+          <li>🎤 Singing</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="achievements">Achievements</h2>
+        <details>
+          <summary>List of achievements</summary>
+          <ul>
+            <li>Completed a group project.</li>
+            <li>Learned new skills over time.</li>
+            <li>Helped classmates with tasks.</li>
+            <li>Finished assignments on schedule.</li>
+            <li>Improved personal organization.</li>
+            <li>Took part in school events.</li>
+            <li>Practiced consistent effort.</li>
+            <li>Supported team activities.</li>
+            <li>Managed time effectively.</li>
+            <li>Reached personal goals.</li>
+          </ul>
+        </details>
+      </section>
+
+      <section>
+        <h2 id="contact-me">Contact Me</h2>
+        <form>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="lorem.ipsum@email.com" required />
+          <br />
+          <label for="phone-number">Phone Number</label>
+          <input type="text" id="phone-number" name="phone-number" placeholder="0917-123-4567" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required />
+          <br />
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday" required />
+          <br />
+          <label for="color">Color</label>
+          <input type="color" id="color" name="color" required />
+          <br />
+          <input class="btn" type="submit" value="Submit" />
+        </form>
+      </section>
+
+      <aside>
+        <h2 id="location">Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d303.54178198641006!2d120.98376291289482!3d14.58754574424885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1757949300752!5m2!1sen!2sph" width="450" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </aside>
+
+      <aside>
+        <h2 id="video">Video</h2>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UKbD3JhXMEk?si=KQVkWdEccaCicdOv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="social-icons">
+        <a href="https://facebook.com/luzana.jas"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://github.com/luzanaGit"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
